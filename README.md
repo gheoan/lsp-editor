@@ -6,4 +6,4 @@ Use a Language Server Protocol (LSP) equipped text editor as a library.
 
 - https://helix-editor.com
 - [![GitHub contributors](https://img.shields.io/github/contributors/helix-editor/helix)](https://github.com/helix-editor/helix/graphs/contributors)
-- Artist: [@jakenvac](https://github.com/jakenvac)
+- Artist [@jakenvac](https://github.com/jakenvac)
