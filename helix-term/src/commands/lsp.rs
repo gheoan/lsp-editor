@@ -694,6 +694,9 @@ pub fn code_action(cx: &mut Context) {
                 )
             });
 
+            actions.retain(|action| if let CodeActionOrCommand::CodeAction(c) = action { c.title.contains("Unmerge use") } else { false} );
+
+
             // Sort codeactions into a useful order. This behaviour is only partially described in the LSP spec.
             // Many details are modeled after vscode because language servers are usually tested against it.
             // VScode sorts the codeaction two times:
