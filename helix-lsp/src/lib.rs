@@ -752,7 +752,7 @@ impl ProgressStatus {
 /// Acts as a container for progress reported by language servers. Each server
 /// has a unique id assigned at creation through [`Registry`]. This id is then used
 /// to store the progress in this map.
-pub struct LspProgressMap(HashMap<LanguageServerId, HashMap<lsp::ProgressToken, ProgressStatus>>);
+pub struct LspProgressMap(pub HashMap<LanguageServerId, HashMap<lsp::ProgressToken, ProgressStatus>>);
 
 impl LspProgressMap {
     pub fn new() -> Self {

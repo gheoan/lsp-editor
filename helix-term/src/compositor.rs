@@ -79,7 +79,7 @@ pub struct Compositor {
     layers: Vec<Box<dyn Component>>,
     area: Rect,
 
-    pub(crate) last_picker: Option<Box<dyn Component>>,
+    pub last_picker: Option<Box<dyn Component>>,
     pub(crate) full_redraw: bool,
 }
 

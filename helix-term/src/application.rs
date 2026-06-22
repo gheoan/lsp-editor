@@ -59,15 +59,15 @@ type TerminalBackend = TestBackend;
 type Terminal = tui::terminal::Terminal<TerminalBackend>;
 
 pub struct Application {
-    compositor: Compositor,
-    terminal: Terminal,
+    pub compositor: Compositor,
+    pub terminal: Terminal,
     pub editor: Editor,
 
-    config: Arc<ArcSwap<Config>>,
+    pub config: Arc<ArcSwap<Config>>,
 
-    signals: Signals,
-    jobs: Jobs,
-    lsp_progress: LspProgressMap,
+    pub signals: Signals,
+    pub jobs: Jobs,
+    pub lsp_progress: LspProgressMap,
 }
 
 #[cfg(feature = "integration")]
